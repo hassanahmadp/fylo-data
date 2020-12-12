@@ -1,0 +1,38 @@
+$colors: (
+  pale-blue: hsl(243, 100%, 93%),
+  grayish-blue: hsl(229, 7%, 55%),
+  dark-blue: hsl(228, 56%, 26%),
+  very-dark-blue: hsl(229, 57%, 11%),
+  gradient-start: hsl(6, 100%, 80%),
+  gradient-end: hsl(335, 100%, 65%),
+);
+
+@function color($color) {
+  @return map-get($colors, $color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  background-color: color(very-dark-blue);
+}
+
+.background {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+.mob-back {
+  display: none;
+}

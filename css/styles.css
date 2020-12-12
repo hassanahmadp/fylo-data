@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  background-color: #0c122c;
+}
+
+.background {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+.mob-back {
+  display: none;
+}
+/*# sourceMappingURL=styles.css.map */
