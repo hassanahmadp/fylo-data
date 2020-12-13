@@ -247,6 +247,7 @@ main .left .triangle {
     padding: 0 1.78571rem;
   }
   main {
+    height: auto;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -267,6 +268,7 @@ main .left .triangle {
     text-align: center;
   }
   main .left {
+    width: 46.8%;
     position: absolute;
     top: 100%;
     left: 50%;
