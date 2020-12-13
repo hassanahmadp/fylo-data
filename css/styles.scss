@@ -7,8 +7,22 @@ $colors: (
   gradient-end: hsl(335, 100%, 65%),
 );
 
+$fact: (10/14);
+
 @function color($color) {
   @return map-get($colors, $color);
+}
+
+@mixin flex($just,$align) {
+  display: flex;
+  justify-content: $just;
+  align-items: $align;
+}
+
+@mixin idealFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 * {
@@ -23,10 +37,15 @@ html {
 }
 
 body {
+  min-height: 100vh;
+  min-width: 100vw;
   background-color: color(very-dark-blue);
+  @include idealFlex;
 }
 
 .background {
+  pointer-events: none;
+  z-index: -1;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -36,3 +55,5 @@ body {
 .mob-back {
   display: none;
 }
+
+@import "./main";

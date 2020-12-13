@@ -1,0 +1,64 @@
+main {
+  position: relative;
+  height: 20rem * $fact;
+  width: 92rem * $fact;
+  background-color: black;
+  @include flex(space-between, flex-end);
+  flex-wrap: wrap;
+  .first-section,
+  .actions,
+  .second-section,.left {
+    border-radius: 0.9rem * $fact;
+  }
+}
+
+main .first-section {
+  padding: 4rem * $fact;
+  width: 35rem * $fact;
+  background-color: color(dark-blue);
+  height: 20rem * $fact;
+  border-top-right-radius: 10rem * $fact;
+  @include flex(space-between, flex-start);
+  flex-direction: column;
+}
+
+.actions-div {
+  height: 4.8rem * $fact;
+  width: 17.6rem * $fact;
+  @include flex(space-between, stretch);
+  .actions {
+    width: 4.8rem * $fact;
+    background-color: color(very-dark-blue);
+    @include idealFlex;
+  }
+}
+
+.second-section {
+  width: 54rem * $fact;
+  height: 15.4rem * $fact;
+  background-color: color(dark-blue);
+}
+
+main .left {
+  height: 7.2rem * $fact;
+  width: 18rem * $fact;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 4rem*$fact;
+  background-color: white;
+  .triangle {
+      z-index: 2;
+      position: absolute;
+      top: 100%;
+      transform: rotate(-135deg) translate(12px,56px);
+      right: 0;
+    //   background-color: black;
+      width: 0px;
+      height: 0px;
+      border-top: 3.1rem*$fact solid white;
+      border-bottom: 3.1rem*$fact solid transparent;
+      border-left: 3.1rem*$fact solid transparent;
+      border-right: 3.1rem*$fact solid white;
+  }
+}

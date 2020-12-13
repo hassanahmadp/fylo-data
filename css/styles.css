@@ -11,10 +11,23 @@ html {
 }
 
 body {
+  min-height: 100vh;
+  min-width: 100vw;
   background-color: #0c122c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .background {
+  pointer-events: none;
+  z-index: -1;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -23,5 +36,109 @@ body {
 
 .mob-back {
   display: none;
+}
+
+main {
+  position: relative;
+  height: 14.28571rem;
+  width: 65.71429rem;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .first-section,
+main .actions,
+main .second-section, main .left {
+  border-radius: 0.64286rem;
+}
+
+main .first-section {
+  padding: 2.85714rem;
+  width: 25rem;
+  background-color: #1d2c67;
+  height: 14.28571rem;
+  border-top-right-radius: 7.14286rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.actions-div {
+  height: 3.42857rem;
+  width: 12.57143rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.actions-div .actions {
+  width: 3.42857rem;
+  background-color: #0c122c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.second-section {
+  width: 38.57143rem;
+  height: 11rem;
+  background-color: #1d2c67;
+}
+
+main .left {
+  height: 5.14286rem;
+  width: 12.85714rem;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 2.85714rem;
+  background-color: white;
+}
+
+main .left .triangle {
+  z-index: 2;
+  position: absolute;
+  top: 100%;
+  -webkit-transform: rotate(-135deg) translate(12px, 56px);
+          transform: rotate(-135deg) translate(12px, 56px);
+  right: 0;
+  width: 0px;
+  height: 0px;
+  border-top: 2.21429rem solid white;
+  border-bottom: 2.21429rem solid transparent;
+  border-left: 2.21429rem solid transparent;
+  border-right: 2.21429rem solid white;
 }
 /*# sourceMappingURL=styles.css.map */
