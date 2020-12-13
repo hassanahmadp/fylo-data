@@ -42,7 +42,6 @@ main {
   position: relative;
   height: 14.28571rem;
   width: 65.71429rem;
-  background-color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,7 +57,8 @@ main {
 
 main .first-section,
 main .actions,
-main .second-section, main .left {
+main .second-section,
+main .left {
   border-radius: 0.64286rem;
 }
 
@@ -112,19 +112,105 @@ main .first-section {
 }
 
 .second-section {
+  font-size: 1rem;
+  padding: 2.85714rem;
+  color: white;
+  position: relative;
   width: 38.57143rem;
   height: 11rem;
   background-color: #1d2c67;
+}
+
+.second-section h3 {
+  font-weight: 400;
+}
+
+.second-section h3 span {
+  font-weight: 700;
+}
+
+.bar-div {
+  height: 1.42857rem;
+  width: 100%;
+  padding: 0.28571rem;
+  background-color: #0c122c;
+  margin: 1.07143rem 0 0.92857rem;
+  border-radius: 0.64286rem;
+}
+
+.bar-div .bar {
+  padding: 2px;
+  position: relative;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#ffa399), to(#ff4d97));
+  background: linear-gradient(to right, #ffa399, #ff4d97);
+  border-radius: 0.64286rem;
+  width: 81.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bar-div .bar .bar-pointer {
+  height: 0.71429rem;
+  width: 0.71429rem;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.ectreme-values {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.ectreme-values p {
+  font-weight: 700;
+  font-size: 1rem;
 }
 
 main .left {
   height: 5.14286rem;
   width: 12.85714rem;
   position: absolute;
-  z-index: 1;
-  top: 0;
+  top: -3.21429rem;
   right: 2.85714rem;
   background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .left p {
+  color: #848794;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+main .left p.data-left {
+  color: #0c122c;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-right: 0.7rem;
 }
 
 main .left .triangle {
@@ -139,6 +225,6 @@ main .left .triangle {
   border-top: 2.21429rem solid white;
   border-bottom: 2.21429rem solid transparent;
   border-left: 2.21429rem solid transparent;
-  border-right: 2.21429rem solid white;
+  border-right: 2.21429rem solid transparent;
 }
 /*# sourceMappingURL=styles.css.map */
