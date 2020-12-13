@@ -8,13 +8,13 @@ $colors: (
 );
 
 $fact: (10/14);
-$border: .9rem*$fact;
+$border: 0.9rem * $fact;
 
 @function color($color) {
   @return map-get($colors, $color);
 }
 
-@mixin flex($just,$align) {
+@mixin flex($just, $align) {
   display: flex;
   justify-content: $just;
   align-items: $align;
@@ -57,4 +57,21 @@ body {
   display: none;
 }
 
+@media (max-width: 889px) {
+  html {
+    font-size: 12px;
+  }
+
+  .mob-back {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+
+  .desktop-back {
+    display: none;
+  }
+}
+
 @import "./main";
+@import "./mainResponsive";
