@@ -178,7 +178,7 @@ main .first-section {
   background-color: white;
 }
 
-.ectreme-values {
+.extreme-values {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -191,7 +191,7 @@ main .first-section {
           align-items: flex-start;
 }
 
-.ectreme-values p {
+.extreme-values p {
   font-weight: 700;
   font-size: 1rem;
 }
@@ -248,70 +248,6 @@ main .left .triangle {
   }
   main {
     width: 100%;
-  }
-  main .first-section {
-    width: 100%;
-  }
-  .second-section {
-    width: 100%;
-    margin-top: 16px;
-    text-align: center;
-  }
-  .bar-div {
-    height: 1.42857rem;
-    width: 100%;
-    padding: 0.28571rem;
-    background-color: #0c122c;
-    margin: 1.07143rem 0 0.92857rem;
-    border-radius: 0.64286rem;
-  }
-  .bar-div .bar {
-    padding: 2px;
-    position: relative;
-    height: 100%;
-    background: -webkit-gradient(linear, left top, right top, from(#ffa399), to(#ff4d97));
-    background: linear-gradient(to right, #ffa399, #ff4d97);
-    border-radius: 0.64286rem;
-    width: 81.5%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .bar-div .bar .bar-pointer {
-    height: 0.71429rem;
-    width: 0.71429rem;
-    border-radius: 50%;
-    background-color: white;
-  }
-  .ectreme-values {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .ectreme-values p {
-    font-weight: 700;
-    font-size: 1rem;
-  }
-  main .left {
-    height: 5.14286rem;
-    width: 12.85714rem;
-    position: absolute;
-    top: -3.21429rem;
-    right: 2.85714rem;
-    background-color: white;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -322,30 +258,24 @@ main .left .triangle {
         -ms-flex-align: center;
             align-items: center;
   }
-  main .left p {
-    color: #848794;
-    font-weight: 700;
-    font-size: 1rem;
+  main .first-section {
+    width: 100%;
   }
-  main .left p.data-left {
-    color: #0c122c;
-    font-weight: 700;
-    font-size: 3rem;
-    margin-right: 0.7rem;
+  .second-section {
+    width: 100%;
+    margin-top: 16px;
+    text-align: center;
   }
-  main .left .triangle {
-    z-index: 2;
+  main .left {
     position: absolute;
     top: 100%;
-    -webkit-transform: rotate(-135deg) translate(12px, 56px);
-            transform: rotate(-135deg) translate(12px, 56px);
-    right: 0;
-    width: 0px;
-    height: 0px;
-    border-top: 2.21429rem solid white;
-    border-bottom: 2.21429rem solid transparent;
-    border-left: 2.21429rem solid transparent;
-    border-right: 2.21429rem solid transparent;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background-color: white;
+  }
+  main .left .triangle {
+    display: none;
   }
 }
 /*# sourceMappingURL=styles.css.map */
